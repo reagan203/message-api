@@ -2,6 +2,10 @@
 const express = require('express');
 // Create an instance of Express
 const app = express();
+const cors = require('cors');
+app.use(cors());
+
+// Set up port to run on (default is 3000)
 // Set the port for the server to listen on, using either the environment port or default to 3000
 const PORT = process.env.PORT || 3000;
 

@@ -16,3 +16,13 @@ creating an api that will be sending love messages with node.js and express
    touch index.js
 8. to run the server you run this command in the terminal
    node  index.js
+9. in order for the api to be working with my react.jsx app we have to now configure CORS 
+   npm install cors
+   10. require the 'cors' module at the top of your code i.e const cors = require('cors');
+   11. add it as middleware before any route is handled, e.g., app.use(cors());
+    
+### API Endpoints: 
+
+#### GET /messages
+Returns all saved messages from the database.on random 
+
